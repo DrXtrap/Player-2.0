@@ -1,0 +1,128 @@
+body {
+    background-image: linear-gradient(
+        rgb(21, 4, 21),
+        rgb(0, 7, 26)
+    );
+    height: 100vh;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos para telas pequenas (smartphones) */
+@media (max-width: 768px) {
+    body {
+        background-image: linear-gradient(
+            rgb(21, 4, 21),
+            rgb(0, 7, 26)
+        );
+        height: auto; /* Ajuste a altura automaticamente */
+        padding: 20px; /* Adicione espaço entre o conteúdo e as bordas da tela */
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Estilos para botões independentemente do tamanho da tela */
+button {
+    background-color: inherit;
+    color: inherit;
+    border: none;
+}
+
+/* Estilos para a seção abaixo do cabeçalho */
+#below-cover {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3em 0em 1em 0em;
+}
+
+/* Estilos para o contêiner de botões */
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para o nome da música */
+#song-name {
+    font-size: 1.6em;
+    font-weight: bolder;
+}
+
+/* Estilos para o nome da banda */
+#band-name {
+    font-size: 1em;
+    font-weight: lighter;
+}
+
+/* Estilos para os botões com diferentes tamanhos */
+.button {
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button-navigate {
+    font-size: 3em;
+}
+
+.button-biggest {
+    font-size: 4em;
+}
+
+/* Estilos para a capa do álbum */
+#cover {
+    width: 350px;
+}
+
+/* Estilos para o título */
+#title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0em 4em 0em;
+}
+
+/* Estilos para a barra de progresso e o progresso atual */
+.light-color {
+    color: rgb(139, 153, 156);
+}
+
+#bar {
+    background-color: rgb(139, 153, 156);
+    height: 3px;
+    width: 100%;
+    border-radius: 15px;
+}
+
+#current-progress {
+    --progress: 0%;
+    background-color: white;
+    height: inherit;
+    width: var(--progress);
+    border-radius: inherit;
+}
+
+#progress-container {
+    cursor: pointer;
+}
+
+.button-active{
+    color: rgb(0, 183, 107)
+}
+
+#time-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: smaller;
+    margin-top: 0.3em;
+}
